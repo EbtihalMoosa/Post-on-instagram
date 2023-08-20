@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8pace"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/i1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/man"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/t"
+        android:background="@drawable/image"
+      android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/i1"
+        android:text="Yashwant Singh Chouhan"
+        android:textColor="@color/white"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintTop_toBottomOf="@id/t"/>
+<!--    <ImageButton-->
+<!--        android:layout_width="dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:src="@drawable/ii"/>-->
+
+    <ImageView
+        android:id="@+id/m"
+        android:layout_width="600dp"
+        android:layout_height="399dp"
+        android:src="@drawable/beauty"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/i1"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/more"
+        app:layout_constraintTop_toBottomOf=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/m"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/icon1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/baseline_favorite_24"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/icon2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/comment"
+        android:layout_marginBottom="150dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintTop_toBottomOf="@id/m"
+        app:layout_constraintStart_toEndOf="@id/icon1"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/icon3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/send"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintTop_toBottomOf="@id/m"
+        app:layout_constraintStart_toEndOf="@id/icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <ImageView
+        android:id="@+id/icon4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/turned_in"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintTop_toBottomOf="@id/m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+<TextView
+    android:id="@+id/like"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1k likes"
+    android:textSize="15dp"
+    android:textColor="@color/white"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/icon1"
+    android:layout_marginStart="10dp"
+    />
+    <TextView
+        android:id="@+id/t2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yashwant Singh Chouhan"
+        android:textColor="@color/white"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/like"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <TextView
+        android:id="@+id/t3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all 0 comments"
+        android:layout_marginBottom="60dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/t2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 24,2023"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintTop_toBottomOf="@id/t2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
